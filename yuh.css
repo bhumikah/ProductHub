@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif; 
 }
 
 body {
@@ -11,12 +12,14 @@ body {
 
 /* HEADER */
 .header {
-  padding: 20px 40px;
+  padding: 20px 30px;
   background: #a4586a;
 }
 
 .logo {
-  color: white;
+  color: #e8b6c3;
+  font-size: 38px;
+  font-weight: 800;
 }
 
 .search {
@@ -143,6 +146,7 @@ button.buy {
     align-items: center;
     justify-content: start;
     gap: 50px;
+    width: 50%;
 }
 
 .nav-left nav {
@@ -191,4 +195,105 @@ button.buy {
 }
 .hero-box h2 {
   opacity: 0.9;
+}
+:root {
+  --bg-pink: #d9939e; /* Adjust to match your specific pink */
+  --banner-pink: #eeb0b9;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-pink);
+  padding-bottom: 50px;
+}
+
+/* The Pink Box */
+.deals-banner {
+  background: linear-gradient(to bottom, #f2c2c9, #eeb0b9); /* Optional gradient like your design */
+  width: 70%;
+  height: 550px; /* Adjust height as needed */
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  /*background-image: url(./dummy/cam1.jpg);
+    background-size: last;
+    background-position: center;
+    
+*/
+  box-shadow: 0 10px 30px #8b3a4b; /* Subtle shadow for depth */
+}
+
+.deals-banner h1 {
+  font-family: 'koho', sans-serif; /* Use your specific font */
+  font-size: 100px;
+  color: #92535d;
+    margin-top: 60px;
+ /* Matches your "new year new deals" style */
+}
+
+/* The Product Row */
+.product-grid {
+  display: flex;
+  gap: 20px;
+  margin-top: -175px; /* THIS PULLS THE CARDS UP HALF-WAY */
+  z-index: 10; /* Ensures cards stay on top of the box */
+}
+
+.product-card {
+  background: white;
+  width: 399px;
+  height: 399px;
+  border-radius: 40px; /* Rounded corners like your image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: 100%;
+}
+.banner-content {
+  text-align: center;
+  z-index: 5;
+  font-family: 'Poiret One',sans-serif; 
+}
+
+ .promo-badge {
+  background: #92535d;
+  color: white;
+  padding: 15px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  align-items: center;
+}
+
+.deals-banner p {
+  color: #7a434d;
+  font-size: 18px;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.cta-button {
+  background: #92535d;
+  color: white;
+  border: none;
+  padding: 20px 40px;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  font-size: medium;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  background: #7a434d;
 }
