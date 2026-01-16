@@ -295,3 +295,34 @@ label {
         transform: translateX(-50%);
     }
 }
+.wishlist-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 42px;
+  height: 42px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 20;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.wishlist-icon i {
+  color: #92535d;
+  font-size: 18px;
+}
+
+/* Hover effect */
+.wishlist-icon:hover {
+  transform: scale(1.1);
+  background: #ffd1dc;
+}
+
+/* Optional: show heart above hover card */
+.product-card:hover .wishlist-icon {
+  opacity: 1;
+}

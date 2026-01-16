@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #e7b9c2;
+  background: linear-gradient(0deg, #a4586a 0%, #e2b4c1 100%);
+}
+
+/* HEADER */
+.header {
+  background: #a4586a;
+  padding: 20px 30px;
+}
+
+.logo {
+  color: #e8b6c3;
+  font-size: 38px;
+  font-weight: 800;
+}
+/* .page-container{ 
+    background-color: #d9939e;}
+
+/* PAGE WRAPPER */
+.about-page {
+  padding: 40px 60px 60px;
+  display: flex;
+  flex-direction: column;
+background-color: #d9939e;
+  gap: 40px;
+  height: 900px;
+}
+
+/* INFO BOXES */
+.info-box {
+  background: #f6dbe1;
+  border-radius: 20px;
+  padding: 30px 35px;
+  color: #7a2f3a;
+  max-width: 100%;
+  height: 400px;
+  box-shadow: 0 10px 20px #a4586a;
+}
+.infobox {
+  background: #f6dbe1;
+  border-radius: 20px;
+  padding: 30px 35px;
+  color: #7a2f3a;
+  max-width: 100%;
+  height: 200px;
+  box-shadow: 0 10px 20px #a4586a;
+}
+/* ABOUT TEXT */
+.info-box h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #7a2f3a;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.info-box h2 span {
+  font-weight: 700;
+  font-size: 50px;
+  font-weight: bold;
+  color: #7a2f3a;
+  font-family: "Poppins", sans-serif; 
+  margin-left: 20px;
+}
+
+.info-box p {
+  font-size: 24px;
+  line-height: 1.6;
+  margin-top: 22px;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(43, 42, 42);
+  text-align: justify;
+  margin-top: 50px;
+}
+
+/* CONTACT BOX */
+.contact-box h3 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+  color: #7a2f3a;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.contact-item i {
+  color: rgb(43, 42, 42);
+}
+.header {
+  padding: 20px 30px;
+  background: #a4586a;
+}
+
+.logo {
+  color: #e8b6c3;
+  font-size: 38px;
+  font-weight: 800;
+  z-index: 10; /* Keeps logo above the scrolling text */
+     /* Matches header to "hide" text behind it */
+  padding-right: 20px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.search {
+  padding: 10px 16px;
+  border-radius: 20px;
+  border: none;
+  width: 365px;
+}
+.icons span {
+  position: relative;
+  margin-left: 15px;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+  color: #a4586a; /* changed to requested color */
+  border-radius: 50%;
+  transition: background 0.18s ease, transform 0.12s ease, color 0.18s ease;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px 0 10px 0;
+  padding: 0 30px;
+  flex-wrap: wrap;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 50px;
+    width: 60%;
+}
+
+.nav-left nav {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 80px;
+}
+
+.nav-left a {
+    text-decoration: none;
+    color: #7a2f3a;
+    font-weight: 500;
+}
+.announcement-bar {
+    background-color: black; /* Use your dark mauve/brown color for contrast */
+    color: white;
+    padding: 10px 0;
+    overflow: hidden; /* Hides the text when it leaves the screen */
+    white-space: nowrap;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    flex: 1;
+    z-index: 5;
+    overflow: hidden;
+    position: relative;
+}
+
+.scrolling-text {
+    display: inline-block;
+    padding-left: 100%; /* Starts the text off-screen to the right */
+    animation: scroll-left 30s linear infinite; /* Adjust '20s' to change speed */
+}
+
+.scrolling-text span {
+    padding-right: 150px; /* Space between the repeating phrases */
+}
+
+/* The Animation Logic */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
