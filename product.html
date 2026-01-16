@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>ProductHub</title>
+    <!-- use relative path to styles folder -->
+    <link rel="stylesheet" href="styles/product.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+     <!-- HEADER -->
+    <header class="header">
+        <div class="header-container">
+        <h1 class="logo">ProductHub.</h1>
+        <div class="announcement-bar">
+    <div class="scrolling-text">
+        <span>USE CODE: PRODUCT10 FOR 10% OFF YOUR FIRST PURCHASE!</span>
+        <span>FREE SHIPPING ON ALL ELECTRONICS THIS WEEKEND!</span>
+        <span>USE CODE: PRODUCT15 FOR 15% OFF YOUR PURCHASE ABOVE INR 30,000!</span>
+        <span>FREE SHIPPING ON ALL ELECTRONICS THIS WEEKEND!</span>
+    </div>
+    </div>
+</div>
+    </header>
+    <div class="nav-bar">
+        <div class="nav-left">
+            <input type="text" class="search" placeholder="Search..." />
+
+            <nav>
+                <a href="/index.html">Home</a>
+                <a href="/product.html">Products</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+
+        <div class="icons">
+            <span><i class="fa-regular fa-heart" aria-hidden="true"></i></span>
+            <span><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></span>
+            <span><i class="fa-regular fa-user" aria-hidden="true"></i></span>
+        </div>
+    </div>
+    <main class="page-container">
+        <!-- new page container: side panel on the left, products on the right -->
+         <aside class="side-panel">
+                    <div class="filter-group">
+                        <select class="sort-dropdown">
+                            <option value="default">Sort by</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Shop by stars</h3>
+                        <div class="star-row">
+                            <input type="checkbox" id="5stars">
+                            <label for="5stars">⭐⭐⭐⭐⭐</label>
+                        </div>
+                        <div class="star-row">
+                            <input type="checkbox" id="4stars">
+                            <label for="4stars">⭐⭐⭐⭐</label>
+                        </div>
+                        <div class="star-row">
+                            <input type="checkbox" id="3stars">
+                            <label for="3stars">⭐⭐⭐</label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Shop by Brands</h3>
+                        <div class="brand-row">
+                            <input type="checkbox" id="apple">
+                            <label for="apple">Apple</label>
+                        </div>
+                        <div class="brand-row">
+                            <input type="checkbox" id="samsung">
+                            <label for="samsung">Samsung</label>
+                        </div>
+                        <div class="brand-row">
+                            <input type="checkbox" id="sony">
+                            <label for="sony">Sony</label>
+                        </div>
+                        <div class="brand-row">
+                            <input type="checkbox" id="oneplus">
+                            <label for="oneplus">One plus</label>
+                        </div>
+                    </div>
+                </aside>
+
+    <section class="product-gridd">
+                <!-- Product Card -->
+                <div class="product-card hover-card">
+
+                    <!-- Image view (default) -->
+                    <div class="card-front">
+                        <img src="./dummy/oneplus.jpg" alt="AirPods">
+                    </div>
+
+                    <!-- Details view (on hover) -->
+                    <div class="card-back">
+                        <h3>OnePlus Wireless Earbuds</h3>
+
+                        <div class="stars">★★★★★</div>
+
+                        <p class="price">Price: INR 15,000</p>
+                        <p class="discount">Discounted price: INR 10,999</p>
+
+                        <div class="actions">
+                            <button>Add to Cart</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2. iPad (hover) -->
+                <div class="product-card hover-card">
+                    <div class="card-front">
+                        <img src="/dummy/pink ipad.jpg" />
+                    </div>
+                    <div class="card-back">
+                        <h3>iPad Pro Pink 1TB</h3>
+                        <div class="stars">★★★★★</div>
+                        <p>Price: INR 80,999</p>
+                        <p>Discounted price: INR 60,999</p>
+                        <div class="actions">
+                            <button>Add to Cart</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Samsung S25 Ultra (hover) -->
+                <div class="product-card hover-card">
+                    <div class="card-front">
+                        <img src="/dummy/samsung 24.jpg" />
+                    </div>
+                    <div class="card-back">
+                        <h3>Samsung Galaxy S25 Ultra</h3>
+                        <div class="stars">★★★★★</div>
+                        <p>Price: INR 80,999</p>
+                        <p>Discounted price: INR 60,999</p>
+                        <div class="actions">
+                            <button>Add to Cart</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card hover-card">
+                    <div class="card-front">
+                        <img src="/dummy/macbook.jpg" />
+                    </div>
+                    <div class="card-back">
+                        <h3>MacBook Air (M3)</h3>
+                        <div class="stars">★★★★★</div>
+                        <p>Price: INR 80,999</p>
+                        <p>Discounted price: INR 60,999</p>
+                        <div class="actions">
+                            <button>Add to Cart</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card hover-card">
+                    <div class="card-front">
+                        <img src="/dummy/sony camera black.jpg" />
+                    </div>
+                    <div class="card-back">
+                        <h3>Sony Cyber-shot HX90V</h3>
+                        <div class="stars">★★★★☆</div>
+                        <p>Price: INR 15,000</p>
+                        <p>Discounted price: INR 10,999</p>
+                        <div class="actions">
+                            <button>Add to Cart</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 6. iPhone XR (hover) -->
+                <div class="product-card hover-card">
+                    <div class="card-front">
+                        <img src="/dummy/iphone xr.jpg" />
+                    </div>
+                    <div class="card-back">
+                        <h3>iPhone XR 128GB</h3>
+                        <div class="stars">★★★★★</div>
+                        <p>Price: INR 80,999</p>
+                        <p>Discounted price: INR 60,999</p>
+                        <div class="actions">
+                            <button>Add to Cart</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="product-card hover-card">
+                    <div class="card-front">
+                        <img src="/dummy/sony headphones.jpg" alt="Headphones">
+                    </div>
+                    <div class="card-back">
+                        <h3>Sony WH-CH720N Noise Cancelling Wireless Headphones</h3>
+                        <div class="stars">★★★★★</div>
+                        <p>Price: INR 30,999</p>
+                        <p>Discounted price: INR 16,000</p>
+
+                        <div class="actions">
+                            <button>Add to Cart</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product-card hover-card">
+                    <div class="card-front">
+                        <img src="/dummy/digicam.jpg" alt="Camera">
+                    </div>
+                    <div class="card-back">
+                        <h3>Sony Cyber-shot Compact Camera</h3>
+                        <div class="stars">★★★★★</div>
+                        <p>Price: INR 15,000</p>
+                        <p>Discounted price: INR 10,999</p>
+
+                        <div class="actions">
+                            <button>Add to Cart</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card hover-card">
+                    <div class="card-front">
+                        <img src="/dummy/iphone2.jpg" alt="Phone">
+                    </div>
+                    <div class="card-back">
+                        <h3>iPhone 16 – 256 GB (Pink)</h3>
+                        <div class="stars">★★★★☆</div>
+                        <p>Price: INR 80,999</p>
+                        <p>Discounted price: INR 60,999</p>
+
+                        <div class="actions">
+                            <button>Add to Cart</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+</body>
+</html>

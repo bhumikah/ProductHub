@@ -6,22 +6,32 @@
     <title>ProductHub</title>
     <!-- Font Awesome CDN for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="yuh.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
 </head>
 
 <body>
 
     <!-- HEADER -->
     <header class="header">
+        <div class="header-container">
         <h1 class="logo">ProductHub.</h1>
+        <div class="announcement-bar">
+    <div class="scrolling-text">
+        <span>USE CODE: PRODUCT10 FOR 10% OFF YOUR FIRST PURCHASE!</span>
+        <span>FREE SHIPPING ON ALL ELECTRONICS THIS WEEKEND!</span>
+        <span>USE CODE: PRODUCT15 FOR 15% OFF YOUR PURCHASE ABOVE INR 30,000!</span>
+        <span>FREE SHIPPING ON ALL ELECTRONICS THIS WEEKEND!</span>
+    </div>
+    </div>
+</div>
     </header>
     <div class="nav-bar">
         <div class="nav-left">
             <input type="text" class="search" placeholder="Search..." />
 
             <nav>
-                <a href="#">Home</a>
-                <a href="#">Products</a>
+                <a href="/index.html">Home</a>
+                <a href="/product.html">Products</a>
                 <a href="#">About</a>
                 <a href="#">Contact</a>
             </nav>
@@ -45,7 +55,7 @@
                 <span class="promo-badge">Limited Time Only</span>
                 <h1 style="font-family: 'Poiret One', sans-serif; font-weight: bold;">New Year new deals</h1>
                 <p>Refresh your tech with our exclusive January offers.</p>
-                <button class="cta-button">Shop the Sale</button>
+                <a href="/product.html" class="cta-button">Shop the Sale</a>
             </div>
         </div>
 

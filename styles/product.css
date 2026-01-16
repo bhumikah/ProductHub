@@ -1,0 +1,297 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif; 
+}
+.card-back {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ 
+ body {
+  background: #e7b9c2;
+  background: linear-gradient(0deg, #a4586a 0%, #e2b4c1 100%);
+} 
+
+.product-gridd {
+  display: grid;
+  grid-template-columns: repeat(3, 260px);
+  gap: 100px;
+  padding: 40px;
+  justify-content: center;
+  width: 60%;
+}
+
+/* Card wrapper */
+.product-card {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  row-gap: 100px;
+   box-shadow: 0 20px 40px #a4586a;
+}
+
+/* Front & Back shared */
+.card-front,
+.card-back {
+  position: absolute;
+  inset: 0;
+  border-radius: 30px;
+  transition: all 0.4s ease;
+}
+
+/* Default image card */
+.card-front {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-front img {
+  width: 80%;
+}
+
+/* Hidden details card */
+.card-back {
+  background: #f8d6dc;
+  padding: 24px;
+  opacity: 0;
+  transform: translateY(20px);
+  text-align: left;
+    
+}
+
+/* Hover effect */
+.product-card:hover .card-front {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.product-card:hover .card-back {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Text styles */
+.card-back h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-back p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.stars {
+  color: #f6d100;
+  margin-bottom: 10px;
+}
+
+.price,
+.discount {
+  font-size: 23px;
+}
+
+/* Buttons */
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+button {
+  border: none;
+  padding: 18px 22px;
+  border-radius: 20px;
+  background: #f9c4c8;
+  cursor: pointer;
+}
+
+.buy {
+  background: #f4a9b2;
+}
+.header {
+  padding: 20px 30px;
+  background: #a4586a;
+  overflow: hidden;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+.logo {
+  color: #e8b6c3;
+  font-size: 38px;
+  font-weight: 800;
+  z-index: 2; /* Keeps logo above the scrolling text */
+     /* Matches header to "hide" text behind it */
+    padding-right: 20px;
+}
+
+.search {
+  padding: 10px 16px;
+  border-radius: 20px;
+  border: none;
+  width: 365px;
+  color: #a4586a;
+}
+.icons span {
+  position: relative;
+  margin-left: 15px;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+  color: #a4586a; /* changed to requested color */
+  border-radius: 50%;
+  transition: background 0.18s ease, transform 0.12s ease, color 0.18s ease;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px 0 10px 0;
+  padding: 0 30px;
+  flex-wrap: wrap;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 50px;
+    width: 60%;
+}
+
+.nav-left nav {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 80px;
+
+}
+
+.nav-left a {
+    text-decoration: none;
+    color: #7a2f3a;
+    font-weight: 500;
+}
+.side-panel {
+  width: 420px;
+  background-color: #f2c2c9; /* Matching your side background */
+  padding: 20px;
+  height: 120vh; /* Full height */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: 'Inter', sans-serif;
+}
+
+.filter-group h3 {
+  font-size: 20px;
+  color: #4A2B30;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Custom Dropdown Styling */
+.sort-dropdown {
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+  appearance: none; /* Removes default arrow */
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23333%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E"); 
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+  background-size: 16px;
+}
+
+/* Checkbox Row Styling */
+.star-row, .brand-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 0.85rem;
+  color: #4A2B30;
+}
+
+/* Styling the Checkboxes */
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #92535d; /* Matches your theme pink-brown */
+  cursor: pointer;
+}
+
+label {
+  cursor: pointer;
+}
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-pink);
+  padding-bottom: 50px;
+}
+ 
+:root {
+  --bg-pink: #d9939e; /* Adjust to match your specific pink */
+}
+.page-container {
+    display: flex; /* This aligns children side-by-side */
+    align-items: flex-start;
+    background-color: #d9939e; /* Matches your background pink */
+    min-height: 100vh;
+}
+.sameline{
+    display: flex;
+}
+.announcement-bar {
+    background-color: black; /* Use your dark mauve/brown color for contrast */
+    color: white;
+    padding: 10px 0;
+    overflow: hidden; /* Hides the text when it leaves the screen */
+    white-space: nowrap;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    flex: 1;
+}
+
+.scrolling-text {
+    display: inline-block;
+    padding-left: 100%; /* Starts the text off-screen to the right */
+    animation: scroll-left 30s linear infinite; /* Adjust '20s' to change speed */
+}
+
+.scrolling-text span {
+    padding-right: 150px; /* Space between the repeating phrases */
+}
+
+/* The Animation Logic */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
