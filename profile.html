@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Profile — ProductHub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="styles/profile.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <h1 class="logo">ProductHub.</h1>
+      <div class="announcement-bar">
+        <div class="scrolling-text">
+          <span>USE CODE: PRODUCT10 FOR 10% OFF YOUR FIRST PURCHASE!</span>
+          <span>FREE SHIPPING ON ALL ELECTRONICS THIS WEEKEND!</span>
+          <span>USE CODE: PRODUCT15 FOR 15% OFF YOUR PURCHASE ABOVE INR 30,000!</span>
+          <span>FREE SHIPPING ON ALL ELECTRONICS THIS WEEKEND!</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="nav-bar">
+    <div class="nav-left">
+      <input type="text" class="search" placeholder="Search..." />
+
+      <nav>
+        <a href="/index.html">Home</a>
+        <a href="/product.html">Products</a>
+        <a href="/aboutcontact.html" class="active">About</a>
+        <a href="/aboutcontact.html">Contact</a>
+      </nav>
+    </div>
+
+    <div class="icons">
+      <span class="nav-wishlist"><i class="fa-regular fa-heart" aria-hidden="true"></i></span>
+      <span class="nav-cart"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></span>
+      <a href="/profile.html"><span><i class="fa-regular fa-user" aria-hidden="true"></i></span></a>
+    </div>
+  </div>
+
+  <main class="page">
+    <section class="profile-panel">
+      <div class="profile-card">
+        <div class="avatar">BB</div>
+        <h2 class="name">Bhumika Bhapri</h2>
+
+        <div class="contact">
+          <div class="contact-row"><strong>Email:</strong> <span>bhumikabhapri@gmail.com</span></div>
+          <div class="contact-row"><strong>Phone:</strong> <span>+91 98765 43210</span></div>
+          <div class="contact-row"><strong>Address:</strong>
+            <address>
+              24 Rosewood Apartments<br>
+              MG Road, Ashok Nagar<br>
+              Bangalore, Karnataka 560094<br>
+            </address>
+          </div>
+        </div>
+
+        <div class="profile-actions">
+          <button class="edit">Edit Profile</button>
+          <button class="logout">Log Out</button>
+        </div>
+      </div>
+
+      <div class="orders">
+        <h3>Previous Orders</h3>
+
+        <div class="order-card">
+          <div class="order-meta">
+            <div><strong>Order #</strong> PH-2024-137</div>
+            <div class="muted">Placed: 2-1-2026</div>
+          </div>
+          <div class="order-body">
+            <div class="thumbnails">
+              <img src="photos/iphone2.jpg" alt="iphone">
+            </div>
+            <div class="order-info">
+              <div>1 item</div>
+              <div class="order-total">Total: ₹60,999</div>
+            </div>
+            <div class="order-status shipped">Shipped</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <div class="cart-panel">
+
+    <div class="cart-header">
+      <h2 class="panel-title">Your Cart</h2>
+      <span class="close-cart">&times;</span>
+    </div>
+
+    <div class="cart-body">
+      <!-- CART ITEMS -->
+      <div class="cart-items panel-section"></div>
+
+      <!-- WISHLIST ITEMS -->
+      <div class="wishlist-items panel-section hidden"></div>
+    </div>
+
+    <!-- CHECKOUT FOOTER -->
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cart-total-amount">₹0</span>
+      </div>
+
+      <button class="checkout-btn">Click here to checkout</button>
+    </div>
+
+  </div>
+
+  <script src="product.js"></script>
+
+</body>
+</html>

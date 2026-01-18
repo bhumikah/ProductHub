@@ -41,9 +41,9 @@
 
 
         <div class="icons">
-            <span><i class="fa-regular fa-heart" aria-hidden="true"></i></span>
-            <span><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></span>
-            <span><i class="fa-regular fa-user" aria-hidden="true"></i></span>
+            <span class="nav-wishlist"><i class="fa-regular fa-heart" aria-hidden="true"></i></span>
+            <span class="nav-cart"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></span>
+            <a href="/profile.html"><span><i class="fa-regular fa-user" aria-hidden="true"></i></span></a>
         </div>
     </div>
 
@@ -60,7 +60,7 @@
         </div>
 
         <div class="product-grid">
-            <div class="product-card"><img src="./photos/sony headphones.jpg" alt="Headphones">
+            <div class="product-card" data-name="Sony WH-CH720N Noise Cancelling Wireless Headphones" data-price="16000" data-img="./photos/sony headphones.jpg" data-rating="5"><img src="./photos/sony headphones.jpg" alt="Headphones">
                 <span class="wishlist-icon">
                     <i class="fa-regular fa-heart"></i>
                 </span>
@@ -70,13 +70,13 @@
                     <p>Price: INR 30,999</p>
                     <p>Discounted price: INR 16,000</p>
 
-                    <div class="buttons">
+                    <div class="actions">
                         <button>Add to Cart</button>
                         <button class="buy">Buy Now</button>
                     </div>
                 </div>
             </div>
-            <div class="product-card"><img src="./photos/digicam.jpg" alt="Camera">
+            <div class="product-card" data-name="Sony Cyber-shot Compact Camera" data-price="10999" data-img="./photos/digicam.jpg" data-rating="5"><img src="./photos/digicam.jpg" alt="Camera">
                 <span class="wishlist-icon">
                     <i class="fa-regular fa-heart"></i>
                 </span>
@@ -86,13 +86,13 @@
                     <p>Price: INR 15,000</p>
                     <p>Discounted price: INR 10,999</p>
 
-                    <div class="buttons">
+                    <div class="actions">
                         <button>Add to Cart</button>
                         <button class="buy">Buy Now</button>
                     </div>
                 </div>
             </div>
-            <div class="product-card"><img src="./photos/iphone2.jpg" alt="Phone">
+            <div class="product-card" data-name="Apple iPhone 16 – 256 GB (Pink)" data-price="60999" data-img="./photos/iphone2.jpg" data-rating="4"><img src="./photos/iphone2.jpg" alt="Phone">
                 <span class="wishlist-icon">
                     <i class="fa-regular fa-heart"></i>
                 </span>
@@ -102,7 +102,7 @@
                     <p>Price: INR 80,999</p>
                     <p>Discounted price: INR 60,999</p>
 
-                    <div class="buttons">
+                    <div class="actions">
                         <button>Add to Cart</button>
                         <button class="buy">Buy Now</button>
                     </div>
@@ -111,7 +111,35 @@
         </div>
     </main>
 
+    <div class="cart-panel">
 
+        <div class="cart-header">
+            <h2 class="panel-title">Your Cart</h2>
+            <span class="close-cart">&times;</span>
+        </div>
+
+        <div class="cart-body">
+            <!-- CART ITEMS -->
+            <div class="cart-items panel-section"></div>
+
+            <!-- WISHLIST ITEMS -->
+            <div class="wishlist-items panel-section hidden"></div>
+        </div>
+
+        <!-- CHECKOUT FOOTER -->
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cart-total-amount">₹0</span>
+            </div>
+
+            <button class="checkout-btn">Click here to checkout</button>
+        </div>
+
+
+    </div>
+
+    <script src="product.js"></script>
 
 </body>
 

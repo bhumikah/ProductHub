@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif
+}
+
+.root-additions {}
+
+:root {
+    --accent: #92535d;
+    --muted: #7a434d;
+    --bg: #f7e6ea;
+    --bg-pink: #d9939e
+}
+
+.body-bg-fallback {}
+
+ body {
+  background: #e7b9c2;
+  height: 800px;
+  background: linear-gradient(0deg, #a4586a 0%, #e2b4c1 100%);
+} 
+
+.header {
+    padding: 18px 28px;
+    background: #a4586a
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%
+}
+
+.logo {
+    color: #e8b6c3;
+    font-size: 38px;
+    font-weight: 800;
+    z-index: 2;
+    padding-right: 20px;
+    margin: 0;
+    white-space: nowrap
+}
+
+.top-nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--muted);
+    font-weight: 600
+}
+
+.top-nav a.active {
+    color: var(--accent)
+}
+
+.page {
+    padding: 156px;
+    background-color: var(--bg-pink)
+}
+
+.profile-panel {
+    display: flex;
+    gap: 28px;
+    max-width: 1100px;
+    margin: 18px auto
+}
+
+.profile-card {
+    width: 320px;
+    background: #fff;
+    border-radius: 16px;
+    padding: 22px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08)
+}
+
+.avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #fff;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 12px
+}
+
+.name {
+    text-align: center;
+    margin-bottom: 4px
+}
+
+.role {
+    text-align: center;
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 12px
+}
+
+.contact {
+    margin-top: 12px
+}
+
+.contact-row {
+    margin-bottom: 10px;
+    font-size: 14px
+}
+
+.contact-row address {
+    font-style: normal;
+    color: #433338;
+    margin-top: 6px
+}
+
+.profile-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 16px
+}
+
+.profile-actions button {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: #ffd1dc;
+    color: #3b2a2d;
+    cursor: pointer
+}
+
+.profile-actions .logout {
+    background: var(--accent);
+    color: #fff
+}
+
+.orders {
+    flex: 1
+}
+
+.orders h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: var(--accent)
+}
+
+.order-card {
+    background: #fff;
+    padding: 14px;
+    border-radius: 12px;
+    margin-bottom: 14px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06)
+}
+
+.order-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px
+}
+
+.muted {
+    color: #8a6a6f;
+    font-size: 13px
+}
+
+.order-body {
+    display: flex;
+    align-items: center;
+    gap: 16px
+}
+
+.thumbnails img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 8px
+}
+
+.order-info {
+    flex: 1
+}
+
+.order-total {
+    font-weight: 700;
+    margin-top: 6px
+}
+
+.order-status {
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-weight: 600
+}
+
+.order-status.delivered {
+    background: #e6f7ea;
+    color: #167a1f
+}
+
+.order-status.shipped {
+    background: #fff3e0;
+    color: #a86200
+}
+
+.order-status.cancelled {
+    background: #fdecea;
+    color: #b21f1f
+}
+
+:root {
+    --bg-pink: #d9939e;
+    --banner-pink: #eeb0b9;
+}
+
+@media (max-width:900px) {
+    .profile-panel {
+        flex-direction: column;
+        padding: 18px
+    }
+
+    .profile-card {
+        width: 100%
+    }
+}
+:root {
+  --bg-pink: #d9939e;
+  height: 1000px; /* Adjust to match your specific pink */
+}
